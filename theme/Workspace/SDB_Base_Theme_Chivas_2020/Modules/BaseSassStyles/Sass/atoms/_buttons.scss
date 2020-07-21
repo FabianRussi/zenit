@@ -7,48 +7,44 @@
 // <button class="button-primary button-medium">Button Primary</button>
 //
 // Styleguide 2.1.1
-
 .button-primary {
-	background: $sc-button-primary-background-color;
-	color: $sc-button-primary-text-color;
-	font-weight: $sc-font-weight-normal;
-	border: 1px solid $sc-button-primary-border-color;
-	border-radius: $sc-button-primary-border-radius;
-	text-transform: $sc-button-primary-text-transform;
-	display: inline-block;
-
-	// TT
-	text-transform: uppercase;
-	@include transition-duration(.2s);
-	@include transition-timing-function(ease);
-
-	&:hover {
-		color: $sc-button-primary-hover-text-color;
-		background: $sc-button-primary-hover-background-color;
-		border-color: $sc-button-primary-hover-border-color;
-		text-decoration: none;
-	}
-
-	&:active, &:focus {
-		color: $sc-button-primary-active-text-color;
-		background: $sc-button-primary-active-background-color;
-		border-color: $sc-button-primary-active-border-color;
-	}
-
-	&:disabled, &-disabled {
-		cursor: default;
-		pointer-events: none;
-		opacity: 0.6;
-	}
+    background: $sc-button-primary-background-color;
+    color: $sc-button-primary-text-color;
+    font-weight: $sc-font-weight-normal;
+    border: 1px solid $sc-button-primary-border-color;
+    border-radius: $sc-button-primary-border-radius;
+    text-transform: $sc-button-primary-text-transform;
+    display: inline-block;
+    text-transform: uppercase;
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease);
+    &:hover {
+        color: $sc-button-primary-hover-text-color;
+        background: $sc-button-primary-hover-background-color;
+        border-color: $sc-button-primary-hover-border-color;
+        text-decoration: none;
+    }
+    &:active,
+    &:focus {
+        color: $sc-button-primary-active-text-color;
+        background: $sc-button-primary-active-background-color;
+        border-color: $sc-button-primary-active-border-color;
+    }
+    &:disabled,
+    &-disabled {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.6;
+    }
 }
-// TT Buttons
+
+// Buttons
 // .button-primary-filled {
 // 	@include btn($sc-button-primary-background-color);
 // }
 // .button-primary-lineal {
 // 	@include lineal-btn($sc-button-primary-background-color);
 // }
-
 // Secondary buttons
 //
 // A secondary action is not as important as a primary action. You should give secondary buttons less visual weight than primary actions.
@@ -58,40 +54,37 @@
 // <button class="button-secondary button-medium">Button Secondary</button>
 //
 // Styleguide 2.1.2
-
 .button-secondary {
-	background: $sc-button-secondary-background-color;
-	color: $sc-button-secondary-text-color;
-	font-weight: $sc-font-weight-normal;
-	border: 1px solid $sc-button-secondary-border-color;
-	border-radius: $sc-button-secondary-border-radius;
-	text-transform: $sc-button-secondary-text-transform;
-	display: inline-block;
-
-	// TT
-	text-transform: uppercase;
-	@include transition-duration(.2s);
-	@include transition-timing-function(ease);
-
-	&:hover {
-		color: $sc-button-secondary-hover-text-color;
-		background: $sc-button-secondary-hover-background-color;
-		border-color: $sc-button-secondary-hover-border-color;
-		text-decoration: none;
-	}
-
-	&:active, &:focus {
-		color: $sc-button-secondary-active-text-color;
-		background: $sc-button-secondary-active-background-color;
-		border-color: $sc-button-secondary-active-border-color;
-	}
-
-	&:disabled {
-		opacity: 0.6;
-		cursor: default;
-	}
+    background: $sc-button-secondary-background-color;
+    color: $sc-button-secondary-text-color;
+    font-weight: $sc-font-weight-normal;
+    border: 1px solid $sc-button-secondary-border-color;
+    border-radius: $sc-button-secondary-border-radius;
+    text-transform: $sc-button-secondary-text-transform;
+    display: inline-block;
+    // TT
+    text-transform: uppercase;
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease);
+    &:hover {
+        color: $sc-button-secondary-hover-text-color;
+        background: $sc-button-secondary-hover-background-color;
+        border-color: $sc-button-secondary-hover-border-color;
+        text-decoration: none;
+    }
+    &:active,
+    &:focus {
+        color: $sc-button-secondary-active-text-color;
+        background: $sc-button-secondary-active-background-color;
+        border-color: $sc-button-secondary-active-border-color;
+    }
+    &:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
 }
-// TT Buttons
+
+// Buttons
 // .button-secondary-filled {
 // 	@include btn($sc-button-secondary-background-color);
 // }
@@ -100,7 +93,6 @@
 // 	color: black;
 // 	border-color: black;
 // }
-
 // Tertiary buttons
 //
 // Tertiary buttons are either not related to the main task, or the least desired actions.
@@ -110,71 +102,64 @@
 // <button class="button-tertiary button-medium">Button Tertiary</button>
 //
 // Styleguide 2.1.3
-
 .button-tertiary {
-	background: $sc-button-tertiary-background-color;
-	color: $sc-button-tertiary-text-color;
-	font-weight: $sc-font-weight-normal;
-	border: 1px solid $sc-button-tertiary-border-color;
-	border-radius: $sc-button-tertiary-border-radius;
-	text-transform: $sc-button-tertiary-text-transform;
-	display: inline-block;
-
-	// TT
-	text-transform: uppercase;
-	@include transition-duration(.2s);
-	@include transition-timing-function(ease);
-
-	&:hover {
-		color: $sc-button-tertiary-hover-text-color;
-		background: $sc-button-tertiary-hover-background-color;
-		border-color: $sc-button-tertiary-hover-border-color;
-		text-decoration: none;
-	}
-
-	&:active, &:focus {
-		color: $sc-button-tertiary-active-text-color;
-		background: $sc-button-tertiary-active-background-color;
-		border-color: $sc-button-tertiary-active-border-color;
-	}
-
-	&:disabled {
-		opacity: 0.6;
-		cursor: default;
-	}
+    background: $sc-button-tertiary-background-color;
+    color: $sc-button-tertiary-text-color;
+    font-weight: $sc-font-weight-normal;
+    border: 1px solid $sc-button-tertiary-border-color;
+    border-radius: $sc-button-tertiary-border-radius;
+    text-transform: $sc-button-tertiary-text-transform;
+    display: inline-block;
+    // TT
+    text-transform: uppercase;
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease);
+    &:hover {
+        color: $sc-button-tertiary-hover-text-color;
+        background: $sc-button-tertiary-hover-background-color;
+        border-color: $sc-button-tertiary-hover-border-color;
+        text-decoration: none;
+    }
+    &:active,
+    &:focus {
+        color: $sc-button-tertiary-active-text-color;
+        background: $sc-button-tertiary-active-background-color;
+        border-color: $sc-button-tertiary-active-border-color;
+    }
+    &:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
 }
 
 .button-quaternary {
-	background: $tt-theme-button-quaternary-background-color;
-	color: $tt-theme-button-quaternary-text-color;
-	font-weight: $sc-font-weight-normal;
-	border: 1px solid $tt-theme-button-quaternary-border-color;
-	border-radius: $tt-theme-button-quaternary-border-radius;
-	text-transform: $tt-theme-button-quaternary-text-transform;
-	display: inline-block;
-
-	// TT
-	text-transform: uppercase;
-	@include transition-duration(.2s);
-	@include transition-timing-function(ease);
-
-	&:hover {
-		color: $tt-theme-button-quaternary-hover-text-color;
-		background: $tt-theme-button-quaternary-hover-background-color;
-		border-color: $tt-theme-button-quaternary-hover-border-color;
-		text-decoration: none;
-	}
-
-	&:active, &:focus {
-		color: $tt-theme-button-quaternary-active-text-color;
-		background: $tt-theme-button-quaternary-active-background-color;
-		border-color: $tt-theme-button-quaternary-active-border-color;
-	}
-
-	&:disabled {
-		opacity: 0.6;
-		cursor: default;
-	}
+    background: $sdb-theme-button-quaternary-background-color;
+    color: $sdb-theme-button-quaternary-text-color;
+    font-weight: $sc-font-weight-normal;
+    border: 1px solid $sdb-theme-button-quaternary-border-color;
+    border-radius: $sdb-theme-button-quaternary-border-radius;
+    text-transform: $sdb-theme-button-quaternary-text-transform;
+    display: inline-block;
+    // TT
+    text-transform: uppercase;
+    @include transition-duration(.2s);
+    @include transition-timing-function(ease);
+    &:hover {
+        color: $sdb-theme-button-quaternary-hover-text-color;
+        background: $sdb-theme-button-quaternary-hover-background-color;
+        border-color: $sdb-theme-button-quaternary-hover-border-color;
+        text-decoration: none;
+    }
+    &:active,
+    &:focus {
+        color: $sdb-theme-button-quaternary-active-text-color;
+        background: $sdb-theme-button-quaternary-active-background-color;
+        border-color: $sdb-theme-button-quaternary-active-border-color;
+    }
+    &:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
 }
 
 // Link buttons
@@ -183,32 +168,27 @@
 // <button class="button-link">Button link</button>
 //
 // Styleguide 2.1.4
-
 .button-link {
-	background: none;
-	color: $sc-color-link;
-	font-weight: $sc-font-weight-normal;
-	border: none;
-	display: inline-block;
-	padding: $sc-padding-lv2 0;
-	margin-right: $sc-margin-lv2;
-
-	&:hover {
-		color: $sc-color-link-hover;
-	}
-
-	&:focus {
-		color: $sc-color-link-hover;
-	}
-
-	&:active {
-		color: $sc-color-link-hover;
-	}
-
-	&:disabled {
-		opacity: 0.6;
-		cursor: default;
-	}
+    background: none;
+    color: $sc-color-link;
+    font-weight: $sc-font-weight-normal;
+    border: none;
+    display: inline-block;
+    padding: $sc-padding-lv2 0;
+    margin-right: $sc-margin-lv2;
+    &:hover {
+        color: $sc-color-link-hover;
+    }
+    &:focus {
+        color: $sc-color-link-hover;
+    }
+    &:active {
+        color: $sc-color-link-hover;
+    }
+    &:disabled {
+        opacity: 0.6;
+        cursor: default;
+    }
 }
 
 // Button sizes
@@ -225,44 +205,40 @@
 // <button class="button-large button-primary">Button</button>
 //
 // Styleguide 2.1.5
-
 .button-large {
-	width: $sc-button-large-mobile-width;
-	padding: $sc-button-large-padding-v $sc-button-large-padding-h;
-	font-size: $sc-button-large-font-size;
-	line-height: $sc-button-large-line-height;
-	letter-spacing: $sc-button-large-letter-spacing;
-	text-align: center;
-
-	@media(min-width: $screen-sm-min) {
-		width: $sc-button-large-desktop-width;
-	}
+    width: $sc-button-large-mobile-width;
+    padding: $sc-button-large-padding-v $sc-button-large-padding-h;
+    font-size: $sc-button-large-font-size;
+    line-height: $sc-button-large-line-height;
+    letter-spacing: $sc-button-large-letter-spacing;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+        width: $sc-button-large-desktop-width;
+    }
 }
 
 .button-medium {
-	width: $sc-button-medium-mobile-width;
-	padding: $sc-button-medium-padding-v $sc-button-medium-padding-h;
-	font-size: $sc-button-medium-font-size;
-	line-height: $sc-button-medium-line-height;
-	letter-spacing: $sc-button-medium-letter-spacing;
-	text-align: center;
-
-	@media(min-width: $screen-sm-min) {
-		width: $sc-button-medium-desktop-width;
-	}
+    width: $sc-button-medium-mobile-width;
+    padding: $sc-button-medium-padding-v $sc-button-medium-padding-h;
+    font-size: $sc-button-medium-font-size;
+    line-height: $sc-button-medium-line-height;
+    letter-spacing: $sc-button-medium-letter-spacing;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+        width: $sc-button-medium-desktop-width;
+    }
 }
 
 .button-small {
-	width: $sc-button-small-mobile-width;
-	padding: $sc-button-small-padding-v $sc-button-small-padding-h;
-	font-size: $sc-button-small-font-size;
-	line-height: $sc-button-small-line-height;
-	letter-spacing: $sc-button-small-letter-spacing;
-	text-align: center;
-
-	@media(min-width: $screen-sm-min) {
-		width: $sc-button-small-desktop-width;
-	}
+    width: $sc-button-small-mobile-width;
+    padding: $sc-button-small-padding-v $sc-button-small-padding-h;
+    font-size: $sc-button-small-font-size;
+    line-height: $sc-button-small-line-height;
+    letter-spacing: $sc-button-small-letter-spacing;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+        width: $sc-button-small-desktop-width;
+    }
 }
 
 // Push button primary (mobile only)
@@ -275,31 +251,27 @@
 // <button class="push-button-primary">Push Button Primary <i></i></button>
 //
 // Styleguide 2.1.6
-
 .push-button-primary {
-	width: 100%;
-	color: $sc-neutral-shade-0;
-	background: $sc-color-secondary;
-	letter-spacing: 1px;
-	font-size: $sc-font-size-l;
-	padding: $sc-padding-lv3;
-	text-align:left;
-
-	&:active {
-		background: $sc-button-secondary-hover-background-color;
-	}
-
-	> i {
-		@extend .fa;
-		@extend %fa-angle-right;
-		font-size: $sc-font-size-xxl;
-		float: right;
-		color: $sc-neutral-shade-0;
-	}
-
-	@media (min-width: $screen-sm-min) {
-		display: none;
-	}
+    width: 100%;
+    color: $sc-neutral-shade-0;
+    background: $sc-color-secondary;
+    letter-spacing: 1px;
+    font-size: $sc-font-size-l;
+    padding: $sc-padding-lv3;
+    text-align: left;
+    &:active {
+        background: $sc-button-secondary-hover-background-color;
+    }
+    >i {
+        @extend .fa;
+        @extend %fa-angle-right;
+        font-size: $sc-font-size-xxl;
+        float: right;
+        color: $sc-neutral-shade-0;
+    }
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
 }
 
 // Push button secondary (mobile only)
@@ -308,52 +280,46 @@
 // <button class="push-button-secondary">Push Button Secondary <i></i></button>
 //
 // Styleguide 2.1.7
-
 .push-button-secondary {
-	width: 100%;
-	color: $sc-color-copy-dark;
-	background: $sc-neutral-shade-0;
-	font-size: $sc-font-size-s;
-	padding: $sc-padding-lv3;
-	border: 1px solid $sc-color-theme-border-light;
-	text-align: left;
-	position: relative;
-
-	&:active {
-		background: $sc-color-theme-background;
-	}
-
-	> i {
-		@extend .fa;
-		@extend %fa-angle-right;
-		font-size: $sc-font-size-xxl;
-		float: right;
-		color: $sc-color-copy-dark;
-		position: absolute;
-		right: 15px;
-		top: 50%;
-		height: 26px;
-		margin-top: -12px;
-	}
-
-	span {
-		@extend p;
-		margin-top: $sc-margin-lv3;
-		color: $sc-neutral-shade-700;
-		padding-right: $sc-padding-lv3;
-		text-overflow: ellipsis;
-		overflow: hidden;
-	}
-
-	.global-views-star-rating {
-		display: inline-block;
-		vertical-align: middle;
-		float: none;
-	}
-
-	@media (min-width: $screen-sm-min) {
-		display: none;
-	}
+    width: 100%;
+    color: $sc-color-copy-dark;
+    background: $sc-neutral-shade-0;
+    font-size: $sc-font-size-s;
+    padding: $sc-padding-lv3;
+    border: 1px solid $sc-color-theme-border-light;
+    text-align: left;
+    position: relative;
+    &:active {
+        background: $sc-color-theme-background;
+    }
+    >i {
+        @extend .fa;
+        @extend %fa-angle-right;
+        font-size: $sc-font-size-xxl;
+        float: right;
+        color: $sc-color-copy-dark;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        height: 26px;
+        margin-top: -12px;
+    }
+    span {
+        @extend p;
+        margin-top: $sc-margin-lv3;
+        color: $sc-neutral-shade-700;
+        padding-right: $sc-padding-lv3;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .global-views-star-rating {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
 }
 
 // Push button with description (mobile only)
@@ -370,15 +336,13 @@
 // </button>
 //
 // Styleguide 2.1.8
-
 .push-button-description {
-	@extend .push-button-secondary;
-
-	p {
-		margin: $sc-margin-lv3 $sc-margin-lv3 0 0;
-		font-size: $sc-font-size-s;
-		color: $sc-color-copy;
-	}
+    @extend .push-button-secondary;
+    p {
+        margin: $sc-margin-lv3 $sc-margin-lv3 0 0;
+        font-size: $sc-font-size-s;
+        color: $sc-color-copy;
+    }
 }
 
 // Split buttons
@@ -405,84 +369,72 @@
 // </div>
 //
 // Styleguide 2.1.9
-
 .split-button {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-
-	.split-button-action {
-		padding: 13px 16px;
-		vertical-align: top;
-		line-height: 14px;
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-		outline: none;
-	}
-
-	.split-button-toggle {
-		border-left: 0;
-		margin-left: -4px;
-		border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
-		outline: none;
-
-		.split-button-toggle-icon {
-			@extend .icon-angle-down;
-		}
-
-		&:hover {
-			.split-button-toggle-icon {
-				color: white;
-			}
-		}
-	}
-
-	&-dropdown {
-		display:none;
-		position: absolute;
-		top: 100%;
-		right: 0;
-		z-index: 1000;
-		min-width: 160px;
-		text-align: left;
-		list-style: none;
-		background-color: $sc-neutral-shade-0;
-		-webkit-background-clip: padding-box;
-		background-clip: padding-box;
-		border: 1px solid $sc-color-theme-border;
-		border-radius: 0;
-		color: $sc-color-secondary;
-		margin-top: $sc-margin-lv1;
-		font-size: 14px;
-		@include box-shadow(0 6px 6px transparentize($sc-neutral-shade-500, 1-0.175));
-
-		a {
-			display: block;
-			padding: $sc-padding-lv2;
-			color: $sc-color-secondary;
-
-			&:hover {
-				color: $sc-color-link;
-			}
-		}
-
-		.split-button-item-divider {
-			border-top: 1px solid $sc-color-theme-border;
-		}
-	}
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    .split-button-action {
+        padding: 13px 16px;
+        vertical-align: top;
+        line-height: 14px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        outline: none;
+    }
+    .split-button-toggle {
+        border-left: 0;
+        margin-left: -4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        outline: none;
+        .split-button-toggle-icon {
+            @extend .icon-angle-down;
+        }
+        &:hover {
+            .split-button-toggle-icon {
+                color: white;
+            }
+        }
+    }
+    &-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        min-width: 160px;
+        text-align: left;
+        list-style: none;
+        background-color: $sc-neutral-shade-0;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 1px solid $sc-color-theme-border;
+        border-radius: 0;
+        color: $sc-color-secondary;
+        margin-top: $sc-margin-lv1;
+        font-size: 14px;
+        @include box-shadow(0 6px 6px transparentize($sc-neutral-shade-500, 1-0.175));
+        a {
+            display: block;
+            padding: $sc-padding-lv2;
+            color: $sc-color-secondary;
+            &:hover {
+                color: $sc-color-link;
+            }
+        }
+        .split-button-item-divider {
+            border-top: 1px solid $sc-color-theme-border;
+        }
+    }
 }
 
-.open .split-button-toggle {
-	@extend .button-secondary:hover;
-
-	i.split-button-toggle-icon {
-		color: $sc-neutral-shade-0;
-	}
-}
-
+// .open .split-button-toggle {
+// 	@extend .button-secondary: hover;
+//     i.split-button-toggle-icon {
+//         color: $sc-neutral-shade-0;
+//     }
 .open .split-button-dropdown {
-	display: inline-block;
+    display: inline-block;
 }
 
 // Pill buttons
@@ -499,41 +451,37 @@
 // </div>
 //
 // Styleguide 2.1.10
-
 .pill-button {
-	display: table-cell;
-	border: 1px solid $sc-color-theme-border;
-	color: $sc-color-secondary;
-	width: auto;
-	vertical-align: middle;
-	line-height: 1;
-	background: $sc-neutral-shade-0;
-
-	&:hover {
-		background-color: $sc-color-secondary;
-		border: 1px solid $sc-color-secondary;
-		color: $sc-neutral-shade-0;
-	}
-
-	&-active {
-		background-color: $sc-color-secondary;
-		border: 1px solid $sc-color-secondary;
-		color: $sc-neutral-shade-0;
-	}
+    display: table-cell;
+    border: 1px solid $sc-color-theme-border;
+    color: $sc-color-secondary;
+    width: auto;
+    vertical-align: middle;
+    line-height: 1;
+    background: $sc-neutral-shade-0;
+    &:hover {
+        background-color: $sc-color-secondary;
+        border: 1px solid $sc-color-secondary;
+        color: $sc-neutral-shade-0;
+    }
+    &-active {
+        background-color: $sc-color-secondary;
+        border: 1px solid $sc-color-secondary;
+        color: $sc-neutral-shade-0;
+    }
 }
 
 .pill-button-group {
-	.pill-button:first-child,
-	.pill-button-active:first-child {
-		border-radius: $sc-border-radius 0 0 $sc-border-radius;
-		border-right: none;
-	}
-
-	.pill-button:last-child,
-	.pill-button-active:last-child {
-		border-radius: 0 $sc-border-radius $sc-border-radius 0;
-		border-left: none;
-	}
+    .pill-button:first-child,
+    .pill-button-active:first-child {
+        border-radius: $sc-border-radius 0 0 $sc-border-radius;
+        border-right: none;
+    }
+    .pill-button:last-child,
+    .pill-button-active:last-child {
+        border-radius: 0 $sc-border-radius $sc-border-radius 0;
+        border-left: none;
+    }
 }
 
 // Icon buttons
@@ -545,135 +493,119 @@
 // <button class="icon-button icon-button-controls active"> <i class="fa fa-bars"></i></button>
 //
 // Styleguide 2.1.11
-
 .icon-button {
-	background: $sc-color-primary;
-	width: $sc-target-size;
-	height: $sc-target-size;
-	overflow: hidden;
-
-	i {
-		color: $sc-neutral-shade-0;
-		width: $sc-target-size;
-		height: $sc-target-size;
-		font-size: $sc-font-size-xxl;
-		line-height: $sc-target-size;
-
-		@media(min-width: $screen-md-min) {
-			font-size: $sc-font-size-xl;
-		}
-	}
-
-	&.icon-button-primary {
-		background: $sc-color-primary;
-
-		&:hover {
-			background: $sc-button-primary-hover-background-color;
-		}
-
-		&:active {
-			background: $sc-button-primary-active-background-color;
-		}
-	}
-
-	&.icon-button-secondary {
-		background: $sc-color-secondary;
-
-		&:hover {
-			background: $sc-button-secondary-hover-background-color;
-		}
-
-		&:active {
-			background: $sc-button-secondary-active-background-color;
-		}
-	}
+    background: $sc-color-primary;
+    width: $sc-target-size;
+    height: $sc-target-size;
+    overflow: hidden;
+    i {
+        color: $sc-neutral-shade-0;
+        width: $sc-target-size;
+        height: $sc-target-size;
+        font-size: $sc-font-size-xxl;
+        line-height: $sc-target-size;
+        @media(min-width: $screen-md-min) {
+            font-size: $sc-font-size-xl;
+        }
+    }
+    &.icon-button-primary {
+        background: $sc-color-primary;
+        &:hover {
+            background: $sc-button-primary-hover-background-color;
+        }
+        &:active {
+            background: $sc-button-primary-active-background-color;
+        }
+    }
+    &.icon-button-secondary {
+        background: $sc-color-secondary;
+        &:hover {
+            background: $sc-button-secondary-hover-background-color;
+        }
+        &:active {
+            background: $sc-button-secondary-active-background-color;
+        }
+    }
 }
 
 .icon-button-controls {
-	background: $sc-neutral-shade-0;
-	color: $sc-color-theme-border;
-	border:1px solid $sc-color-theme-border;
-	text-align:center;
-	display:inline-block;
-	@extend .icon-button;
-
-	&.active, .active{
-		color: $sc-color-primary;
-		border:1px solid $sc-color-primary;
-		background: $sc-neutral-shade-0;
-
-		i {
-			color: $sc-color-primary;
-		}
-	}
-
-	i {
-		color: $sc-color-theme-500;
-	}
+    background: $sc-neutral-shade-0;
+    color: $sc-color-theme-border;
+    border: 1px solid $sc-color-theme-border;
+    text-align: center;
+    display: inline-block;
+    @extend .icon-button;
+    &.active,
+    .active {
+        color: $sc-color-primary;
+        border: 1px solid $sc-color-primary;
+        background: $sc-neutral-shade-0;
+        i {
+            color: $sc-color-primary;
+        }
+    }
+    i {
+        color: $sc-color-theme-500;
+    }
 }
 
 .button-back {
-	display:block;
-	margin-bottom: $sc-margin-lv3;
-	padding-top: $sc-padding-lv1;
-	padding-bottom: $sc-padding-lv1;
-
-	@media (min-width: $screen-sm-min) {
-		display: none;
-	}
+    display: block;
+    margin-bottom: $sc-margin-lv3;
+    padding-top: $sc-padding-lv1;
+    padding-bottom: $sc-padding-lv1;
+    @media (min-width: $screen-sm-min) {
+        display: none;
+    }
 }
 
 .button-back-icon {
-	@extend .icon-base;
-	@extend %fa-angle-left;
-	margin-right: $sc-margin-lv1;
+    @extend .icon-base;
+    @extend %fa-angle-left;
+    margin-right: $sc-margin-lv1;
 }
 
 .button-positioning-stack2next {
-	margin-top: $sc-margin-lv2;
-
-	@media (min-width: $screen-sm-min) {
-		margin-top: 0;
-		margin-left: $sc-margin-lv1;
-	}
+    margin-top: $sc-margin-lv2;
+    @media (min-width: $screen-sm-min) {
+        margin-top: 0;
+        margin-left: $sc-margin-lv1;
+    }
 }
 
 .button-positioning-next2stack {
-	display: inline-block;
-	margin-left: $sc-margin-lv1 ;
-
-	@media (min-width: $screen-sm-min) {
-		display: block;
-		margin-top: $sc-margin-lv2;
-		margin-left: 0;
-	}
+    display: inline-block;
+    margin-left: $sc-margin-lv1;
+    @media (min-width: $screen-sm-min) {
+        display: block;
+        margin-top: $sc-margin-lv2;
+        margin-left: 0;
+    }
 }
 
 .button-generic {
-	width: 100%;
-	text-align: center;
-	line-height: 1;
-	display: block; // Fix ie width 100%
-	position: relative; // Fix ie width 100%
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    display: block; // Fix ie width 100%
+    position: relative; // Fix ie width 100%
 }
 
 .button-list-header {
-	height: $sc-target-size;
-	line-height: $sc-target-size;
-	min-width: $sc-target-size;
-
-	padding: 0 $sc-padding-lv4;
-	letter-spacing:0.5px;
-	font-size: $sc-font-size-m;
-	overflow: hidden;
+    height: $sc-target-size;
+    line-height: $sc-target-size;
+    min-width: $sc-target-size;
+    padding: 0 $sc-padding-lv4;
+    letter-spacing: 0.5px;
+    font-size: $sc-font-size-m;
+    overflow: hidden;
 }
 
 .button-list-header-shrink {
-	padding-left: $sc-padding-lv2;
-	padding-right: $sc-padding-lv2;
-
-	@media (min-width: $screen-sm-min){
-		padding-left: $sc-padding-lv4;
-		padding-right: $sc-padding-lv4;
-	}
+    padding-left: $sc-padding-lv2;
+    padding-right: $sc-padding-lv2;
+    @media (min-width: $screen-sm-min) {
+        padding-left: $sc-padding-lv4;
+        padding-right: $sc-padding-lv4;
+    }
 }

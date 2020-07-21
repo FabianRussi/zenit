@@ -20,8 +20,7 @@
     width: 100%;
 }
 
-//TT new styles
-
+//new styles
 .this-full-width {
     width: 100%;
     float: left;
@@ -45,11 +44,10 @@
 //     .shopping-layout-breadcrumb,
 //     .myaccount-layout-breadcrumb {
 //         @media (min-width: $screen-md-min) {
-//             padding-top: $tt-theme-header-height;
+//             padding-top: $sdb-theme-header-height;
 //         }
 //     }
 // }
-
 .sec_wizard {
     #main-container {
         @media (min-width: $screen-md-min) {
@@ -62,11 +60,12 @@
 div.shopping-layout-breadcrumb {
     @media (max-width: $screen-sm-min) {
         // height: 20px;
-        .global-views-breadcrumb-container { display: none; }
+        .global-views-breadcrumb-container {
+            display: none;
+        }
     }
     // width: 100%;
     // padding: 0 !important;
-
     // div.global-views-breadcrumb-container {
     //     @extend .container;
     //     margin-top: $sc-padding-lv1 * 4;
@@ -76,7 +75,6 @@ div.shopping-layout-breadcrumb {
 //Media Queries
 $screen-xxs-min: 360px;
 $screen-xlg-min: 1440px;
-
 //Custom Badges Labels at FS, QV, PDP
 .custombadge {
     position: absolute;
@@ -84,7 +82,7 @@ $screen-xlg-min: 1440px;
     height: auto;
     padding: 5px 10px;
     font-size: 12px;
-    background:#20b24c;
+    background: #20b24c;
     color: #fff;
 }
 
@@ -93,11 +91,9 @@ $screen-xlg-min: 1440px;
     float: left;
     width: 100%;
     height: auto;
-
     @media (max-width: $screen-sm-min) {
         text-align: center;
     }
-
     .custombadge {
         display: inline-block;
         position: initial;

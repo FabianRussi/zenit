@@ -607,7 +607,6 @@
             "Modules/Wizard/Sass/_wizard-step-navigation.scss",
             "Modules/Wizard/Sass/_wizard-step.scss",
             "Modules/Wizard/Sass/_wizard.scss",
-            "Modules/BaseSassStyles/Sass/variables/_tt-variables.scss",
             "Modules/Content/Sass/_about-us-landing.scss",
             "Modules/Content/Sass/_contact-us-landing.scss",
             "Modules/Content/Sass/_FAQs-landing.scss",
@@ -624,7 +623,8 @@
             "Modules/Subscriptions/Sass/_subscriptions-pricing-view.scss",
             "Modules/Subscriptions/Sass/_subscriptions-status.scss",
             "Modules/BackboneExtras/Sass/_backbone-validation.scss",
-            "Overrides/SuiteCommerce/ItemBadges/Modules/Main/Sass/_itembadges.scss"
+            "Overrides/SuiteCommerce/ItemBadges/Modules/Main/Sass/_itembadges.scss",
+            "Modules/BaseSassStyles/Sass/variables/_sdb-variables.scss"
         ]
     },
     "templates": {

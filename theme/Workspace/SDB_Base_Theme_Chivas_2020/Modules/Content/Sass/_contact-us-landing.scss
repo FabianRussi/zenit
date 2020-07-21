@@ -1,12 +1,12 @@
 .contact-us-content {
-	h1 {
-		font-weight: $sc-font-weight-semibold;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		text-align: center;
-		padding-top: $sc-padding-lv8;
-		border-bottom: 1px solid $sc-color-theme-border-light;
-	}
+    h1 {
+        font-weight: $sc-font-weight-semibold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: $sc-padding-lv8;
+        border-bottom: 1px solid $sc-color-theme-border-light;
+    }
 }
 
 // div.contact-us-form {
@@ -20,12 +20,10 @@
 // 		max-width: 600px;
 // 		margin: 0 auto;
 // 		text-align: center;
-		
 // 		.contact-us-form-controls p {
 // 			color: $sc-color-error;
 // 			margin-bottom: $sc-padding-lv3;
 // 		}
-
 // 		// Fields
 // 		input, textarea {
 // 			@include transition-duration(.2s);
@@ -34,10 +32,9 @@
 // 			margin-bottom: $sc-padding-lv1 * 2;
 // 			padding: 12px 2%;
 // 			background: transparent;
-// 			border: 1px solid $tt-theme-input-border-color;
+// 			border: 1px solid $sdb-theme-input-border-color;
 // 			text-align: left;
 // 			color: $sc-color-copy;
-		
 // 			&:focus {
 // 				outline: 0;
 // 				box-shadow: none;

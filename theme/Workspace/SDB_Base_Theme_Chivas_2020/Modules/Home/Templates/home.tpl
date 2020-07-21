@@ -72,19 +72,19 @@
     <div class="home">
 
         <!-- CMS - Slider -->
-        <section data-cms-area="tt-chivas_home_cms_area_slider" data-cms-area-filters="path"></section>
+        <section data-cms-area="sdb-chivas_home_cms_area_slider" data-cms-area-filters="path"></section>
 
         <!-- CMS - Welcome -->
-        <section data-cms-area="tt-chivas_home_cms_area_welcome" data-cms-area-filters="path"></section>
+        <section data-cms-area="sdb-chivas_home_cms_area_welcome" data-cms-area-filters="path"></section>
 
         <!-- CMS - Banners  -->
-        <section data-cms-area="tt-chivas_home_cms_area_banners" data-cms-area-filters="path"></section>
+        <section data-cms-area="sdb-chivas_home_cms_area_banners" data-cms-area-filters="path"></section>
 
         <!-- CMS - Categories  -->
-        <section data-cms-area="tt-chivas_home_cms_area_categories" data-cms-area-filters="path"></section>
+        <section data-cms-area="sdb-chivas_home_cms_area_categories" data-cms-area-filters="path"></section>
 
         <!-- CMS - Merch Zone  -->
-        <section data-cms-area="tt-chivas_home_cms_area_merchzone" data-cms-area-filters="path"></section>
+        <section data-cms-area="sdb-chivas_home_cms_area_merchzone" data-cms-area-filters="path"></section>
 
     </div>
 

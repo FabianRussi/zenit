@@ -11,65 +11,59 @@
 // </div>
 //
 // Styleguide 3.11
-
 .quantity-input-container {
-	display: block;
-
-	@media (max-width: $container-tablet) {
-		display: inline-block;
-	}
+    display: block;
+    @media (max-width: $container-tablet) {
+        display: inline-block;
+    }
 }
 
 input[type="number"].quantity-input {
- 	width: 60px;
- 	height: 40px;
- 	text-align: right;
- 	padding: $sc-margin-lv2;
-	// background-color: $sc-color-theme-background;
-	border: 0;
-	float: left;
-	margin-bottom: 0;
-	border: 1px solid $tt-theme-input-border-color;
-
-	@media (max-width: $screen-md-min) {
-		border: 0;
-	}
-
-	@media (min-width: $screen-md-min) {
-		display: block;
-		// background: white;
-		float: none;
-		// border: 1px solid $tt-theme-input-border-color;
-	}
+    width: 60px;
+    height: 40px;
+    text-align: right;
+    padding: $sc-margin-lv2;
+    // background-color: $sc-color-theme-background;
+    border: 0;
+    float: left;
+    margin-bottom: 0;
+    border: 1px solid $sdb-theme-input-border-color;
+    @media (max-width: $screen-md-min) {
+        border: 0;
+    }
+    @media (min-width: $screen-md-min) {
+        display: block;
+        // background: white;
+        float: none;
+        // border: 1px solid $sdb-theme-input-border-color;
+    }
 }
 
 .quantity-input-button {
-	background-color: $sc-color-theme-500;
-	color: $sc-neutral-shade-0;
-	border: none;
-	width: 40px;
-	height: 40px;
-	float: left;
-
-	&:hover, &:active  {
-		background-color: $sc-color-theme-700;
-	}
-
-	&:focus {
-		outline: none;
-	}
-
-	@media (min-width: $screen-md-min) {
-		display: none;
-	}
+    background-color: $sc-color-theme-500;
+    color: $sc-neutral-shade-0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    float: left;
+    &:hover,
+    &:active {
+        background-color: $sc-color-theme-700;
+    }
+    &:focus {
+        outline: none;
+    }
+    @media (min-width: $screen-md-min) {
+        display: none;
+    }
 }
 
 .quantity-input-button-add {
-	@extend .quantity-input-button;
-	border-radius: 0 $sc-border-radius $sc-border-radius 0;
+    @extend .quantity-input-button;
+    border-radius: 0 $sc-border-radius $sc-border-radius 0;
 }
 
 .quantity-input-button-remove {
-	@extend .quantity-input-button;
-	border-radius: $sc-border-radius 0 0 $sc-border-radius;
+    @extend .quantity-input-button;
+    border-radius: $sc-border-radius 0 0 $sc-border-radius;
 }

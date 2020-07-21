@@ -10,32 +10,29 @@
 // <label>Required <small class="required">*</small></label><br>
 //
 // Styleguide 2.3.1
-
 label {
-	display:inline-block;
-	margin-bottom: $sc-margin-lv2;
-	font-weight: $sc-font-weight-semibold;
-	font-size: $sc-font-size-m;
-	color: $sc-color-copy-dark;
-
-	small {
-		font-size: $sc-font-size-s;
-
-		&.required {
-			color: $sc-color-primary;
-		}
-	}
+    display: inline-block;
+    margin-bottom: $sc-margin-lv2;
+    font-weight: $sc-font-weight-semibold;
+    font-size: $sc-font-size-m;
+    color: $sc-color-copy-dark;
+    small {
+        font-size: $sc-font-size-s;
+        &.required {
+            color: $sc-color-primary;
+        }
+    }
 }
 
 // TODO: This definition should be deleted. Previously used to indicate required fields.
 .input-required {
-	font-size: $sc-font-size-s;
-	color: $tt-theme-input-font-color; // $sc-color-primary
+    font-size: $sc-font-size-s;
+    color: $sdb-theme-input-font-color; // $sc-color-primary
 }
 
 // TODO: This definition should be deleted. Previously used to indicate optional fields.
 .input-optional {
-	font-size: $sc-font-size-s;
+    font-size: $sc-font-size-s;
 }
 
 // Form input fields
@@ -49,22 +46,19 @@ label {
 // <input type="text" name="sample-field-disabled" disabled /><br>
 //
 // Styleguide 2.3.2
-
 input {
-	padding: $sc-padding-lv2;
-	display: block;
-	color: $tt-theme-input-font-color; // $sc-color-copy;
-	font-size: $sc-font-size-m;
-	border: $tt-theme-input-border-weight solid $tt-theme-input-border-color; // $sc-color-theme-border
-	background-color: $tt-theme-input-background-color;
-	width: 100%;
-	margin-bottom: $sc-margin-lv2;
-
-
-	&:disabled {
-		border-color: $tt-theme-input-border-color-disabled; // sc-color-theme-border-light
-		background-color: $tt-theme-input-background-color; // $sc-color-theme-background
-	}
+    padding: $sc-padding-lv2;
+    display: block;
+    color: $sdb-theme-input-font-color; // $sc-color-copy;
+    font-size: $sc-font-size-m;
+    border: $sdb-theme-input-border-weight solid $sdb-theme-input-border-color; // $sc-color-theme-border
+    background-color: $sdb-theme-input-background-color;
+    width: 100%;
+    margin-bottom: $sc-margin-lv2;
+    &:disabled {
+        border-color: $sdb-theme-input-border-color-disabled; // sc-color-theme-border-light
+        background-color: $sdb-theme-input-background-color; // $sc-color-theme-background
+    }
 }
 
 input[type="text"],
@@ -73,56 +67,67 @@ input[type="email"],
 input[type="tel"],
 input[type="search"],
 input[type="date"],
-input[type="number"]
-{
-	@include appearance(none);
-	@include placeholder {
-		color: $tt-theme-input-font-color-placeholder; // $sc-color-copy-light
-	}
-	@include border-radius($tt-theme-input-border-radius);
+input[type="number"] {
+    @include appearance(none);
+    @include placeholder {
+        color: $sdb-theme-input-font-color-placeholder; // $sc-color-copy-light
+    }
+    @include border-radius($sdb-theme-input-border-radius);
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-	display: inline-block;
-	width: auto;
-	margin-right: $sc-margin-lv2;
+    display: inline-block;
+    width: auto;
+    margin-right: $sc-margin-lv2;
 }
 
-input[type="date"]
+input[type="date"] {
+    -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-outer-spin-button,
+
+/* Removes arrows */
+
+input[type="date"]::-webkit-inner-spin-button,
+
+/* Removes arrows */
+
+input[type="date"]::-webkit-clear-button,
+
+/* Removes blue cross */
+
+input[type="date"]::-webkit-calendar-picker-indicator
+/* Removes arrow calendar */
+
 {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
+    display: none;
 }
 
-input[type="date"]::-webkit-outer-spin-button, /* Removes arrows */
-input[type="date"]::-webkit-inner-spin-button, /* Removes arrows */
-input[type="date"]::-webkit-clear-button, /* Removes blue cross */
-input[type="date"]::-webkit-calendar-picker-indicator /* Removes arrow calendar */ {
-  -webkit-appearance: none;
-  display: none;
+input.input-large,
+select.input-large {
+    width: 100%;
+    @media (min-width: $screen-md-min) {
+        width: auto;
+        min-width: 300px;
+    }
 }
 
-input.input-large, select.input-large {
-	width: 100%;
-
-	@media (min-width: $screen-md-min) {
-		width: auto;
-		min-width: 300px;
-	}
+input.input-medium,
+select.input-medium {
+    width: 100%;
+    min-width: 200px;
+    @media (min-width: $screen-sm-min) {
+        width: auto;
+        min-width: 300px;
+    }
 }
 
-input.input-medium, select.input-medium {
-	width: 100%;
-	min-width: 200px;
-
-	@media (min-width: $screen-sm-min) {
-		width: auto;
-		min-width: 300px;
-	}
-}
-
-input.input-small, select.input-small {
-	min-width: 80px;
+input.input-small,
+select.input-small {
+    min-width: 80px;
 }
 
 // Form select fields
@@ -147,30 +152,25 @@ input.input-small, select.input-small {
 // </select>
 //
 // Styleguide 2.3.3
-
 select {
-	@include angle-down-background($sc-color-theme-700); // TODO: Mixin definition should be changed in order to use chevron icon instead an image background
-	@include appearance(none);
-	@include border-radius($tt-theme-input-border-radius);
-	display: block;
-	border: $tt-theme-input-border-weight solid $tt-theme-input-border-color; // $sc-color-theme-border-light
-
-	padding: $sc-padding-lv2;
-	padding-right: $sc-padding-lv6;
-	margin-bottom: $sc-margin-lv2;
-
-	background-color: $tt-theme-input-background-color; // $sc-neutral-shade-0
-	background-repeat: no-repeat;
-	background-size: $sc-navigation-icon-size;
-	background-position: 100% 100%;
-
-	color: $tt-theme-input-font-color; // $sc-neutral-shade-500
-	font-size: $sc-font-size-m;
-
-	&:disabled {
-		border: $tt-theme-input-border-weight solid $tt-theme-input-border-color-disabled; // $sc-color-theme-border-light
-		background-color: $tt-theme-input-background-color; // $sc-color-theme-background
-	}
+    @include angle-down-background($sc-color-theme-700); // TODO: Mixin definition should be changed in order to use chevron icon instead an image background
+    @include appearance(none);
+    @include border-radius($sdb-theme-input-border-radius);
+    display: block;
+    border: $sdb-theme-input-border-weight solid $sdb-theme-input-border-color; // $sc-color-theme-border-light
+    padding: $sc-padding-lv2;
+    padding-right: $sc-padding-lv6;
+    margin-bottom: $sc-margin-lv2;
+    background-color: $sdb-theme-input-background-color; // $sc-neutral-shade-0
+    background-repeat: no-repeat;
+    background-size: $sc-navigation-icon-size;
+    background-position: 100% 100%;
+    color: $sdb-theme-input-font-color; // $sc-neutral-shade-500
+    font-size: $sc-font-size-m;
+    &:disabled {
+        border: $sdb-theme-input-border-weight solid $sdb-theme-input-border-color-disabled; // $sc-color-theme-border-light
+        background-color: $sdb-theme-input-background-color; // $sc-color-theme-background
+    }
 }
 
 // Select with icon
@@ -189,48 +189,44 @@ select {
 // </div>
 //
 // Styleguide 2.3.4
-
 .selector {
-	display: block;
-	margin: $sc-margin-lv3;
-	float: left;
-	@media(min-width: $screen-md-min) {
-		margin: 0px;
-	}
-
-	&-select {
-		width: 175px;
-		border: $tt-theme-input-border-weight solid $tt-theme-input-border-color; // $sc-color-theme-border-light
-		border-left: none;
-		height: $sc-target-size;
-		float: right;
-		@media(min-width: $screen-md-min) {
-			width: 233px;
-		}
-	}
-
-	&-icon {
-	  width: 40px;
-	  background: $tt-theme-input-icon-background; // $sc-color-theme-background
-	  color: $tt-theme-input-icon-font; // $sc-color-theme-700
-	  
-	  //font-size: $sc-font-size-xxl;
-	  font-size: $sc-font-size-m;
-	  border: $tt-theme-input-border-weight solid $tt-theme-input-border-color; // $sc-color-theme-border-light
-	  border-right: none;
-	  float: left;
-	  line-height: 41px;
-	  height: 44px;
-	  text-align: center;
-	}
+    display: block;
+    margin: $sc-margin-lv3;
+    float: left;
+    @media(min-width: $screen-md-min) {
+        margin: 0px;
+    }
+    &-select {
+        width: 175px;
+        border: $sdb-theme-input-border-weight solid $sdb-theme-input-border-color; // $sc-color-theme-border-light
+        border-left: none;
+        height: $sc-target-size;
+        float: right;
+        @media(min-width: $screen-md-min) {
+            width: 233px;
+        }
+    }
+    &-icon {
+        width: 40px;
+        background: $sdb-theme-input-icon-background; // $sc-color-theme-background
+        color: $sdb-theme-input-icon-font; // $sc-color-theme-700
+        //font-size: $sc-font-size-xxl;
+        font-size: $sc-font-size-m;
+        border: $sdb-theme-input-border-weight solid $sdb-theme-input-border-color; // $sc-color-theme-border-light
+        border-right: none;
+        float: left;
+        line-height: 41px;
+        height: 44px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width:0\0) {
-	//ie dont understand appearance on selects. so hide background.
-	select[class] {
-		background-image: none;
-		padding-right: $sc-padding-lv2;
-	}
+    //ie dont understand appearance on selects. so hide background.
+    select[class] {
+        background-image: none;
+        padding-right: $sc-padding-lv2;
+    }
 }
 
 // Input Type Textarea
@@ -241,22 +237,20 @@ select {
 // <textarea>Textarea</textarea>
 //
 // Styleguide 2.3.5
-
 textarea {
-	border: $tt-theme-input-border-weight solid $tt-theme-input-border-color; // $sc-color-theme-border
-	padding: $sc-margin-lv2;
-	font-size: $sc-font-size-m;
-	color: $tt-theme-input-font-color; // $sc-color-copy-dark
-	width:100%;
-	min-height: 105px;
-	background-color: $tt-theme-input-background-color;
-	@include appearance(none);
-	@include border-radius($tt-theme-input-border-radius);
-
-	@media (min-width: $screen-sm-min){
-		width: auto;
-		min-width: 300px;
-	}
+    border: $sdb-theme-input-border-weight solid $sdb-theme-input-border-color; // $sc-color-theme-border
+    padding: $sc-margin-lv2;
+    font-size: $sc-font-size-m;
+    color: $sdb-theme-input-font-color; // $sc-color-copy-dark
+    width: 100%;
+    min-height: 105px;
+    background-color: $sdb-theme-input-background-color;
+    @include appearance(none);
+    @include border-radius($sdb-theme-input-border-radius);
+    @media (min-width: $screen-sm-min) {
+        width: auto;
+        min-width: 300px;
+    }
 }
 
 // Input Type Checkbox
@@ -280,35 +274,29 @@ textarea {
 // </div>
 //
 // Styleguide 2.3.6
-
 .checkbox {
-	display: inline;
-
-	input[type="checkbox"] {
-		display: none;
-	}
-
-	input[type="checkbox"] + label::before {
-		font-family: FontAwesome;
-		content: "\f096";
-		font-size: 18px;
-		color: $tt-theme-input-font-color; // $sc-color-theme-700
-		display: inline-block;
-		width: 18px;
-		vertical-align: middle;
-	}
-
-	input[type="checkbox"]:disabled + label {
-		color: $tt-theme-input-font-color-disabled; // $sc-neutral-shade-300
-	}
-
-	input[type="checkbox"]:disabled + label::before {
-		color: $tt-theme-input-font-color-disabled; // $sc-neutral-shade-300
-	}
-
-	input[type="checkbox"]:checked + label::before {
-		content: "\f046";
-	}
+    display: inline;
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]+label::before {
+        font-family: FontAwesome;
+        content: "\f096";
+        font-size: 18px;
+        color: $sdb-theme-input-font-color; // $sc-color-theme-700
+        display: inline-block;
+        width: 18px;
+        vertical-align: middle;
+    }
+    input[type="checkbox"]:disabled+label {
+        color: $sdb-theme-input-font-color-disabled; // $sc-neutral-shade-300
+    }
+    input[type="checkbox"]:disabled+label::before {
+        color: $sdb-theme-input-font-color-disabled; // $sc-neutral-shade-300
+    }
+    input[type="checkbox"]:checked+label::before {
+        content: "\f046";
+    }
 }
 
 // Input Type Radio
@@ -334,35 +322,29 @@ textarea {
 // </div>
 //
 // Styleguide 2.3.7
-
 .radio {
-	display: inline;
-
-	input[type="radio"] {
-		display: none;
-	}
-
-	input[type="radio"] + label::before {
-		font-family: FontAwesome;
-		content: "\f10c";
-		font-size: 18px;
-		color: $tt-theme-input-font-color; // $sc-color-theme-700
-		display: inline-block;
-		width: 18px;
-		vertical-align: middle;
-	}
-
-	input[type="radio"]:disabled + label {
-		color: $tt-theme-input-font-color-disabled; // $sc-neutral-shade-300
-	}
-
-	input[type="radio"]:disabled + label::before {
-		color: $tt-theme-input-font-color-disabled; // $sc-neutral-shade-300
-	}
-
-	input[type="radio"]:checked + label::before {
-		content: "\f192";
-	}
+    display: inline;
+    input[type="radio"] {
+        display: none;
+    }
+    input[type="radio"]+label::before {
+        font-family: FontAwesome;
+        content: "\f10c";
+        font-size: 18px;
+        color: $sdb-theme-input-font-color; // $sc-color-theme-700
+        display: inline-block;
+        width: 18px;
+        vertical-align: middle;
+    }
+    input[type="radio"]:disabled+label {
+        color: $sdb-theme-input-font-color-disabled; // $sc-neutral-shade-300
+    }
+    input[type="radio"]:disabled+label::before {
+        color: $sdb-theme-input-font-color-disabled; // $sc-neutral-shade-300
+    }
+    input[type="radio"]:checked+label::before {
+        content: "\f192";
+    }
 }
 
 // Error state
@@ -385,13 +367,11 @@ textarea {
 // </div>
 //
 // Styleguide 2.3.8
-
 [data-validation-error] input,
 [data-validation-error] select,
-[data-validation-error] textarea
-{
-	border-color: $sc-color-error;
-	outline-color: desaturate(lighten($sc-color-error, 18), 35);
+[data-validation-error] textarea {
+    border-color: $sc-color-error;
+    outline-color: desaturate(lighten($sc-color-error, 18), 35);
 }
 
 // Help Text
@@ -405,12 +385,11 @@ textarea {
 // <small class="help-text"> Help text always must be defined after input.</small>
 //
 // Styleguide 2.3.9
-
 .help-text {
-	color: $sc-color-theme-700;
-	display: block;
-	margin-top: -$sc-margin-lv1;
-	margin-bottom: $sc-margin-lv3;
+    color: $sc-color-theme-700;
+    display: block;
+    margin-top: -$sc-margin-lv1;
+    margin-bottom: $sc-margin-lv3;
 }
 
 // Tooltip
@@ -421,40 +400,39 @@ textarea {
 // <i class="sc-tooltip" data-toggle="tooltip" data-placement="right" title="Sample text"></i>
 //
 // Styleguide 2.3.10
-
 .sc-tooltip {
-	@extend .fa;
-	@extend %fa-question-circle;
-	color: $sc-color-secondary;
-	cursor:pointer;
+    @extend .fa;
+    @extend %fa-question-circle;
+    color: $sc-color-secondary;
+    cursor: pointer;
 }
 
 .tooltip.in {
-	opacity: 1;
+    opacity: 1;
 }
 
-.tooltip > .tooltip-inner {
-	background-color: $sc-color-theme-background;
-	padding: $sc-padding-lv2;
-	color: $sc-color-secondary;
-	border:1px solid $sc-color-theme-border-light;
-	font-size: $sc-font-size-s;
-	text-align: left;
+.tooltip>.tooltip-inner {
+    background-color: $sc-color-theme-background;
+    padding: $sc-padding-lv2;
+    color: $sc-color-secondary;
+    border: 1px solid $sc-color-theme-border-light;
+    font-size: $sc-font-size-s;
+    text-align: left;
 }
 
-.tooltip.top > .tooltip-arrow {
-	border-top-color: $sc-color-theme-border-light;
-	border-width: 5px 5px 0;
+.tooltip.top>.tooltip-arrow {
+    border-top-color: $sc-color-theme-border-light;
+    border-width: 5px 5px 0;
 }
 
-.tooltip.bottom > .tooltip-arrow {
-	border-bottom-color: $sc-color-theme-border-light;
-	border-width: 0 5px 5px;
+.tooltip.bottom>.tooltip-arrow {
+    border-bottom-color: $sc-color-theme-border-light;
+    border-width: 0 5px 5px;
 }
 
 .tooltip.right .tooltip-arrow,
 .tooltip.left .tooltip-arrow {
-	border-right-color: $sc-color-theme-border-light;
+    border-right-color: $sc-color-theme-border-light;
 }
 
 // Popover
@@ -463,35 +441,30 @@ textarea {
 // <i class="sc-popover" placement="top" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"></i>
 //
 // Styleguide 2.3.11
-
 .sc-popover {
-	@extend .fa;
-	@extend %fa-question-circle;
-	color: $sc-color-secondary;
-	cursor:pointer;
+    @extend .fa;
+    @extend %fa-question-circle;
+    color: $sc-color-secondary;
+    cursor: pointer;
 }
 
 .popover {
-	border: 1px solid $sc-color-theme-border-light;
-	color: $sc-color-secondary;
-	font-size: $sc-font-size-s;
-	z-index: 99999;
-	padding: 0;
-
-	&.right > .arrow {
-		border-right-color: $sc-color-theme-border-light;
-	}
-
-	&.left > .arrow {
-		border-left-color: $sc-color-theme-border-light;
-	}
-
-	&.bottom > .arrow:after {
-		border-bottom-color: $sc-color-theme-background;
-	}
+    border: 1px solid $sc-color-theme-border-light;
+    color: $sc-color-secondary;
+    font-size: $sc-font-size-s;
+    z-index: 99999;
+    padding: 0;
+    &.right>.arrow {
+        border-right-color: $sc-color-theme-border-light;
+    }
+    &.left>.arrow {
+        border-left-color: $sc-color-theme-border-light;
+    }
+    &.bottom>.arrow:after {
+        border-bottom-color: $sc-color-theme-background;
+    }
 }
 
 .popover-title {
-	background-color: $sc-color-theme-background;
+    background-color: $sc-color-theme-background;
 }
-
