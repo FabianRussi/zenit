@@ -1,0 +1,17 @@
+.cms-terms-conditions {
+	margin-bottom: $sc-margin-lv8;
+
+	h1 {
+		font-weight: $sc-font-weight-semibold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		text-align: center;
+		padding: $sc-padding-lv3 0;
+		margin-bottom: $sc-margin-lv3;
+		border-bottom: 1px solid $sc-color-theme-border;
+	}
+
+	img {
+		margin-top: $sc-margin-lv4;
+	}
+}

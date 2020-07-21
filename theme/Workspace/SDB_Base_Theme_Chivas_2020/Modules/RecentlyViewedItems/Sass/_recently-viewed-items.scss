@@ -1,0 +1,21 @@
+.recently-viewed-items {
+	position:relative;
+	h3{
+		@extend .tab-content-panel-title;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: $sc-font-size-l;
+		font-weight: $sc-font-weight-semibold;
+		padding-bottom: $sc-padding-lv2;
+		margin-bottom: $sc-padding-lv3;
+		border-bottom: 1px solid $sc-color-theme-border-light;
+	}
+	.bx-controls-direction{
+		text-align:right;
+		margin-bottom:$sc-margin-lv8;
+	}
+}
+
+ul.recently-viewed-row-cell li{
+	display:inline-block;
+}

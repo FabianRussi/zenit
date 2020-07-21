@@ -1,0 +1,40 @@
+.storelocator-accesspoints-headerlink-link {
+	min-width: $sc-target-size;
+	text-align: center;
+	display:inline;
+	color: $sc-color-secondary;
+	float:left;
+
+	// @media(min-width: $screen-sm-min) {
+	// 	float:none;
+	// }
+}
+
+.storelocator-accesspoints-headerlink-link-icon {
+	@extend .icon-map-marker;
+	margin-right: $sc-margin-lv1;
+	font-size: 25px;
+	position:relative;
+	top: -1px;
+
+	@media(max-width: $screen-sm-max) { top:10px; }
+}
+
+.storelocator-accesspoints-headerlink-link-text {
+	display:none;
+	@media(min-width: $screen-sm-max) {
+		display: inline-block;
+	}
+}
+
+.store-location-mobile {
+    display: none;
+
+    @media(max-width: $screen-md-min) {
+        display: block;
+
+        a.storelocator-accesspoints-headerlink-link { min-width: 55px; }
+
+        i.storelocator-accesspoints-headerlink-link-icon { top: 2px; color: white; }
+    }
+}

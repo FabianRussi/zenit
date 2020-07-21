@@ -1,0 +1,75 @@
+// .header-logo {
+// 	display: block;
+// 	line-height: $sc-main-nav-height;
+// 	height: $sc-main-nav-height;
+// 	margin-left: $sc-margin-lv2;
+
+// 	@media (max-width: $screen-xs-min) {
+// 		max-width: 100%;
+// 	}
+
+// 	@media (min-width: $screen-sm-min) {
+// 		width: 100%;
+// 		margin:0px;
+// 	}
+
+// 	// @media (max-width: $screen-md-min) {
+// 	// 	margin-top: $sc-margin-lv2;
+// 	// }
+// }
+
+// .header-logo-image {
+// 	width: 90%;
+// 	max-width: 115px;
+// 	max-height: 50px;
+// 	vertical-align: middle;
+
+// 	@media (min-width: $screen-md-min) {
+// 		width: auto;
+// 	}
+// }
+
+//TT New Styles
+.header-logo-wrapper {
+	&.desktop-logo {
+		float: left;
+		@media (max-width: $screen-md-min) { display: none; }
+	}
+	&.mobile-logo {
+		display: none;
+		@media (max-width: $screen-md-min) {
+			display: block;
+			background-color: $sc-header-background-color;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}
+
+a.header-logo {
+	// @media (min-width: $screen-md-min) {
+	// 	height: 75px;
+	// }
+
+	@media (max-width: $screen-md-min) {
+		display: inline-block;
+	}
+}
+
+img.header-logo-image {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	margin: 0;
+
+	@media (min-width: $screen-md-min) {
+		display: inline-block;
+		max-height: 67px;
+	}
+
+	@media (max-width: $screen-md-min) {
+		max-height: 70px;
+		margin-top: $sc-margin-lv3;
+		margin-bottom: $sc-margin-lv2 + 1px;
+	}
+}

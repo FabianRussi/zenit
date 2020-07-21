@@ -1,0 +1,17 @@
+.product-line-stock-description-msg-description {
+	@extend .stock-info-description;
+	@extend .product-line-stock-msg;
+	
+	i { float: left; }
+	span {
+		float: left;
+		text-align: left;
+		width: calc(100% - 20px);
+	}
+}
+
+.product-line-stock-description-icon-description {
+	@extend .product-line-stock-icon;
+	@extend .icon-info;
+	color: $sc-color-info;
+}

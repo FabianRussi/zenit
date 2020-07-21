@@ -1,0 +1,40 @@
+// .header-simplified-header {
+//     min-height: $sc-main-nav-height;
+//     // background-color: $sc-top-menu-background-color;
+// }
+
+// .header-simplified-header-logo {
+//     text-align: center;
+
+//     .header-logo-image {
+//         width: auto;
+//     }
+// }
+
+//TT new styles
+header.checkout-layout-header {
+    nav.header-simplified-header {
+        min-height: $tt-theme-header-height-simplified;
+        background: $sc-header-background-color;
+        border-bottom: 1px solid $sc-header-border-color;
+
+        @media (min-width: $screen-sm-min) { text-align: center; }
+
+        div.header-simplified-header-logo {
+
+            a.header-logo {
+                img {
+                    float: none;
+                    max-height: 40px;
+                    max-width: 200px;
+                    margin: $sc-margin-lv2 0 !important;
+
+                    @media (max-width: $screen-sm-min) {
+                        vertical-align: unset;
+                        padding-left: $sc-padding-lv3;
+                    }
+                }
+            }
+        }
+    }
+}

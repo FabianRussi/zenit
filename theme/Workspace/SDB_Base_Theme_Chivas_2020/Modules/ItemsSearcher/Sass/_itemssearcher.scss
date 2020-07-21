@@ -1,0 +1,30 @@
+.itemssearcher-input {
+	@extend .nav-search-input;
+	width: 80%;
+}
+.twitter-typeahead {
+	height: 100%;
+}
+.custom-search-input {
+	border: none;
+    width: calc(100% - 120px);
+    height: 100%;
+    padding: 0px;
+	padding-left: 20px;
+	color: $tt-theme-header-search-font-input;
+	background-color: transparent;
+
+	@media (max-width: $screen-sm-max) {
+		margin-bottom: 0;
+		padding-left: 13px;
+		width: calc(100% - 80px);
+		color: $tt-theme-header-search-color-mobile;
+		background-color: transparent;
+	}
+}
+.custom-search-input:focus {
+	outline: none;
+}
+.tt-menu.tt-open {
+	margin-top: 0px;
+}
