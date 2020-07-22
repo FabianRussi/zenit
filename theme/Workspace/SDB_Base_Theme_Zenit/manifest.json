@@ -1,5 +1,5 @@
 {
-    "name": "SDB_Base_Theme_Chivas_2020",
+    "name": "SDB_Base_Theme_Zenit",
     "fantasyName": "SuiteDB Base Theme Chivas 2020",
     "vendor": "SuiteDB",
     "version": "0.0.1",
@@ -1370,5 +1370,5 @@
             }
         }
     },
-    "local_folder": "Workspace/SDB_Base_Theme_Chivas_2020"
+    "local_folder": "Workspace/SDB_Base_Theme_Zenit"
 }
