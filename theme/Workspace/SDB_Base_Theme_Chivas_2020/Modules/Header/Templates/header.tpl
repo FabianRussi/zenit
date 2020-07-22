@@ -2,13 +2,84 @@
 
     <div class="header-message" data-view="Message.Placeholder"></div>
 
+
+    <div class="header-secondary-section">
+
+        {{!--
+        <!-- <div class="header-divider"></div> -->--}}
+
+        <!-- Start Mobile Toggle  -->
+        <div class="header-sidebar-toggle-wrapper">
+            <button class="header-sidebar-toggle" data-action="header-sidebar-show">
+				<i class="header-sidebar-toggle-icon"></i>
+			</button>
+        </div>
+        <!-- End Mobile Toggle -->
+
+
+        {{!--
+        <!-- <div class="header-center-msg">
+			<div data-cms-area="sdb-chivas_header_center-msg" data-cms-area-filters="global"></div>
+		</div> -->
+        --}}
+
+        <div class="store-location-mobile" data-view="StoreLocatorHeaderLink"></div>
+
+
+
+        <div class="header-secondary-section-right">
+            <!-- {{#if showLanguagesOrCurrencies}}
+			<ul class="header-subheader-options-lc">
+				<li class="header-subheader-settings">
+					<a href="#" class="header-subheader-settings-link" data-toggle="dropdown" title="{{translate 'Settings'}}">
+						<i class="header-menu-settings-icon"></i>
+						Select Currency
+						<i class="header-menu-settings-carret"></i>
+					</a>
+					<div class="header-menu-settings-dropdown">
+						<h5 class="header-menu-settings-dropdown-title">
+							{{translate 'Currency'}}
+							comment >>>>>>>>>>>> {{translate 'Site Settings'}}
+						</h5>
+						{{#if showLanguages}}
+							<div data-view="Global.HostSelector"></div>
+						{{/if}}
+						{{#if showCurrencies}}
+							<div data-view="Global.CurrencySelector"></div>
+						{{/if}}
+					</div>
+				</li>
+			</ul>
+			{{/if}} -->
+            <!-- Mini Cart -->
+
+
+        </div>
+
+        {{!--
+        <!-- <div class="header-divider"></div> -->--}}
+    </div>
+    <div class="center-item-header">
+        <div class="header-menu-cart header-flex-1">
+            <div class="header-menu-cart-dropdown">
+                <div data-view="Header.MiniCart"></div>
+            </div>
+        </div>
+        <div class="header-logo-wrapper desktop-logo header-flex-1">
+            <div data-view="Header.Logo"></div>
+        </div>
+
+        <div class="search-container header-flex-1">
+            <div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
+        </div>
+    </div>
     <div class="header-main-wrapper">
         <div class="header-main-nav">
 
             <div class="header-content">
 
                 <div class="header-left-section">
-                    <div data-cms-area="sdb-chivas_header_top-left-content" data-cms-area-filters="global"></div>
+                    <!-- <div data-cms-area="sdb-chivas_header_top-left-content" data-cms-area-filters="global"></div> -->
                     <ul class="header-menu-actions"></ul>
                 </div>
 
@@ -17,7 +88,6 @@
                     <ul class="header-menu-actions">
                         <li data-view="StoreLocatorHeaderLink"></li>
                         <li data-view="QuickOrderHeaderLink"></li>
-                        <li><a>Track your order</a></li>
                         <li data-view="RequestQuoteWizardHeaderLink"></li>
                     </ul>
 
@@ -51,73 +121,6 @@
         </div>
 
     </div>
-
-    <div class="header-secondary-section">
-
-        {{!--
-        <!-- <div class="header-divider"></div> -->--}}
-
-        <!-- Start Mobile Toggle  -->
-        <div class="header-sidebar-toggle-wrapper">
-            <button class="header-sidebar-toggle" data-action="header-sidebar-show">
-				<i class="header-sidebar-toggle-icon"></i>
-			</button>
-        </div>
-        <!-- End Mobile Toggle -->
-
-        <div class="header-logo-wrapper desktop-logo">
-            <div data-view="Header.Logo"></div>
-        </div>
-
-        {{!--
-        <!-- <div class="header-center-msg">
-			<div data-cms-area="sdb-chivas_header_center-msg" data-cms-area-filters="global"></div>
-		</div> -->
-        --}}
-
-        <div class="store-location-mobile" data-view="StoreLocatorHeaderLink"></div>
-
-        <div class="search-container">
-            <div class="header-site-search" data-view="SiteSearch" data-type="SiteSearch"></div>
-        </div>
-
-        <div class="header-secondary-section-right">
-            <!-- {{#if showLanguagesOrCurrencies}}
-			<ul class="header-subheader-options-lc">
-				<li class="header-subheader-settings">
-					<a href="#" class="header-subheader-settings-link" data-toggle="dropdown" title="{{translate 'Settings'}}">
-						<i class="header-menu-settings-icon"></i>
-						Select Currency
-						<i class="header-menu-settings-carret"></i>
-					</a>
-					<div class="header-menu-settings-dropdown">
-						<h5 class="header-menu-settings-dropdown-title">
-							{{translate 'Currency'}}
-							comment >>>>>>>>>>>> {{translate 'Site Settings'}}
-						</h5>
-						{{#if showLanguages}}
-							<div data-view="Global.HostSelector"></div>
-						{{/if}}
-						{{#if showCurrencies}}
-							<div data-view="Global.CurrencySelector"></div>
-						{{/if}}
-					</div>
-				</li>
-			</ul>
-			{{/if}} -->
-            <!-- Mini Cart -->
-            <div class="header-menu-cart">
-                <div class="header-menu-cart-dropdown">
-                    <div data-view="Header.MiniCart"></div>
-                </div>
-            </div>
-        </div>
-
-        {{!--
-        <!-- <div class="header-divider"></div> -->--}}
-    </div>
-
-
     <div class="header-logo-wrapper mobile-logo">
         <div data-view="Header.Logo"></div>
     </div>

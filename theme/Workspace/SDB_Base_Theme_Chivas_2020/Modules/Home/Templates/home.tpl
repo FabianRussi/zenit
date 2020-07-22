@@ -5,8 +5,7 @@
             {{#each carouselImages}}
             <li>
                 <div class="home-slide-main-container">
-                    <div class="" style="background-image:url('{{resizeImage this ../imageHomeSize}}') ; background-size: cover;
-					background-position:center center;height: 600px;">
+                    <div class="img-carousel-bg" style="background-image:url('{{this}}');">
                         <!-- <img src="{{resizeImage this ../imageHomeSize}}" alt="" /> -->
                     </div>
                     <!-- 
@@ -23,7 +22,7 @@
             <li>
                 <div class="home-slide-main-container">
                     <div class="home-slide-image-container">
-                        <img src="{{getThemeAssetsPath (resizeImage 'img/carousel-home-1.png' ../imageHomeSize)}}" alt="" />
+                        <img src="{{getThemeAssetsPath ( 'img/carousel-home-1.png' ../imageHomeSize)}}" alt="" />
                     </div>
 
                     <div class="home-slide-caption">

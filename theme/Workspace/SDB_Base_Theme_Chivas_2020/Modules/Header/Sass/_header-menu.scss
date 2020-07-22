@@ -213,7 +213,7 @@ div.header-secondary-wrapper {
     @media (min-width: $screen-md-min) {
         width: 100%;
         //background-color: $sc-main-navigation-background-color;
-        background-color: #3c896d;
+        background-color: #C5C3C6;
         height: auto;
         // float: left;
         position: initial;
@@ -226,9 +226,12 @@ div.header-secondary-wrapper {
 // Header Nav. Links
 nav.header-menu-secondary-nav {
     @extend .container;
+    display: flex;
+    justify-content: center;
     padding: 0 10px;
     position: relative;
-    font-size: $sc-font-size-m;
+    // font-size: $sc-font-size-m;
+    font-size: 11px;
     >ul.header-menu-level1 {
         >li.header-menu-level1-anchor {
             padding: 0;

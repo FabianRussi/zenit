@@ -23,7 +23,7 @@
 // 		width: auto;
 // 	}
 // }
-//New Styles
+//TT New Styles
 .header-logo-wrapper {
     &.desktop-logo {
         float: left;
@@ -56,13 +56,15 @@ img.header-logo-image {
     height: auto;
     max-width: 100%;
     margin: 0;
+    margin-top: 20px;
     @media (min-width: $screen-md-min) {
         display: inline-block;
         max-height: 67px;
     }
     @media (max-width: $screen-md-min) {
         max-height: 70px;
-        margin-top: $sc-margin-lv3;
+        //	margin-top: $sc-margin-lv3;
         margin-bottom: $sc-margin-lv2 + 1px;
+        margin-top: 20%;
     }
 }

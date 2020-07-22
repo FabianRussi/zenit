@@ -52,7 +52,7 @@
 }
 
 @mixin header-top-links {
-    font-size: $sc-font-size-s; //14px;
+    font-size: 11px;
     font-weight: $sc-font-weight-normal !important;
     // color: $sc-top-menu-link-text-color;
     line-height: normal;
@@ -207,7 +207,7 @@ $btn-secondary-color) {
 //new styles
 // Header Top - Links
 @mixin header-top-links {
-    font-size: $sc-font-size-m;
+    font-size: 11px;
     font-weight: $sc-font-weight-normal !important;
     // color: $sc-top-menu-link-text-color;
     letter-spacing: normal;

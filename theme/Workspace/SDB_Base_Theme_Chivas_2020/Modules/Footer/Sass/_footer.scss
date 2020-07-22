@@ -4,7 +4,7 @@ $footer-column-border-color: lighten($sc-footer-background-color, 10);
 .footer-content-box {
     //border-top: 1px solid $sc-footer-border-color;
     //background-color: $sc-footer-background-color;
-    background-color: #3c896d;
+    background-color: #C5C3C6;
     //color: $sc-footer-text-color !important;
     .footer-content {
         @extend .container;
@@ -32,7 +32,7 @@ $footer-column-border-color: lighten($sc-footer-background-color, 10);
 // Footer Titles Desktop
 .footer-titles-desktop {
     // background-color: $sc-footer-border-color;
-    background-color: #50ffb1;
+    background-color: #C5C3C6;
     p {
         color: black !important;
     }

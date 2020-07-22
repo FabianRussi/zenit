@@ -2,7 +2,7 @@
 /// Main Color Palette - Client Colors ///
 // (SC Variable: $sc-color-primary) Client Identity Primary Color: Primary buttons, add to cart, price color
 //$theme-primary-color: #50FFB1;
-$theme-primary-color: #3c896d;
+$theme-primary-color: #4C5C68;
 // (SC Variable: $sc-color-secondary) Client Identity Secondary Color: Secondary buttons, see more, add to wishlist, edit,...
 $theme-secondary-color: rgb(22, 22, 22);
 /// Site Backgrounds ///
@@ -10,7 +10,7 @@ $theme-secondary-color: rgb(22, 22, 22);
 $theme-color-body-background: rgb(255, 255, 255);
 /// Boxes & Elements ///
 // (SC Variable: $sc-color-theme) Theme Palette Color: Base variable of Theme Pallete (500). Theme Palette scale is from 1000 (dark) to 0 (light)
-$theme-color-theme: #107a8b;
+$theme-color-theme: #4C5C68;
 // (SC Variables: $sc-color-theme-background) Secondary Background Color: Boxes and containers, highlight background colors, boxes background, transaction history hover back
 $theme-color-theme-background: #f5f5f5;
 /// Borders ///
@@ -24,6 +24,7 @@ $theme-border-radius: 3px;
 /// Font Imports ///
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 /// Font Family ///
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 // (SC Variable: $sc-font-family) Primary Font Family: body, h4, h5, h6
 $theme-font-family-primary: "Open Sans",
 Helvetica,
@@ -123,19 +124,19 @@ $sdb-theme-text-selected-background-color: rgb(0,
 0);
 //// BUTTONS ////
 // (SC Variables) Primary Button: Add to cart, continue
-$theme-button-primary-background-color: #50ffb1;
+$theme-button-primary-background-color: #4C5C68;
 $theme-button-primary-text-color: black;
-$theme-button-primary-border-color: #50ffb1;
+$theme-button-primary-border-color: #4C5C68;
 $theme-button-primary-border-radius: $theme-border-radius;
 $theme-button-primary-hover-background-color: transparent;
-$theme-button-primary-hover-text-color: #50ffb1;
-$theme-button-primary-hover-border-color: #50ffb1;
+$theme-button-primary-hover-text-color: #4C5C68;
+$theme-button-primary-hover-border-color: #4C5C68;
 $theme-button-primary-active-background-color: transparent;
-$theme-button-primary-active-text-color: #50ffb1;
-$theme-button-primary-active-border-color: #50ffb1;
+$theme-button-primary-active-text-color: #4C5C68;
+$theme-button-primary-active-border-color: #4C5C68;
 $theme-button-primary-text-transform: none;
 // (SC Variables) Secondary Button: Add to quote, add to wishlist, cancel
-$theme-button-secondary-background-color: #3c896d;
+$theme-button-secondary-background-color: #4c5c68;
 $theme-button-secondary-text-color: rgb(255,
 255,
 255);
@@ -302,7 +303,7 @@ $sdb-theme-header-menu-font-color: rgb(0,
 0,
 0);
 // (SC Variable: $sc-header-link-text-color) Header link highlights
-$theme-header-link-text-color: #50ffb1;
+$theme-header-link-text-color: #4C5C68;
 // (SC Variable: $sc-header-link-hover-text-color) Header link highlight hover
 $theme-header-link-text-color-hover: lighten( $theme-header-link-text-color,
 10%);
@@ -403,10 +404,12 @@ $theme-header-cart-link-text-color: rgb(255,
 255,
 255);
 // (SC Variable: $sc-header-cart-link-text-color-hover) Header: Cart Icon and font Color hover
-$theme-header-cart-link-text-color-hover: desaturate( lighten($theme-header-cart-link-text-color, 10),
+$theme-header-cart-link-text-color-hover: desaturate( lighten($theme-header-cart-link-text-color,
+10),
 9);
 // (SC Variable: $sc-header-cart-link-text-color-active) Header: Cart Icon and font Color active
-$theme-header-cart-link-text-color-active: desaturate( darken($theme-header-cart-link-text-color, 5),
+$theme-header-cart-link-text-color-active: desaturate( darken($theme-header-cart-link-text-color,
+5),
 10);
 /// Header Navigation ///
 // (SC Variable: $sc-main-navigation-background-color) Header Main Nav Background Color
@@ -562,7 +565,7 @@ $sdb-theme-footer-font-color-social: rgb(255,
 255,
 255);
 // (Variable) Footer social icons buttons background color
-$sdb-theme-footer-background-color-social: #50ffb1;
+$sdb-theme-footer-background-color-social: #4C5C68;
 /// Footer Field ///
 // (SC Variable: $sc-footer-fields-background-color) Footer subscribe input background color
 $theme-footer-fields-background-color: transparent;
@@ -589,7 +592,7 @@ $theme-footer-buttons-text-color: rgb(0,
 0,
 0);
 // (SC Variable: $sc-footer-buttons-background-color) Footer subscribe button background color
-$theme-footer-buttons-background-color: #50ffb1;
+$theme-footer-buttons-background-color: #1985a1;
 // (SC Variable: $sc-footer-buttons-text-color) Footer subscribe button background color
 $theme-footer-buttons-border-color: rgb(255,
 255,
