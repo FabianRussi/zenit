@@ -47,7 +47,7 @@
         "request-promise": "4.2.4",
         "requirejs": "2.3.6",
         "semver": "6.1.1",
-        "shelljs": "0.8.3",
+        "shelljs": "0.8.5",
         "suitetalk": "file:./ns_npm_repository/suitetalk4node",
         "through": "file:./ns_npm_repository/through",
         "through2": "3.0.1",
