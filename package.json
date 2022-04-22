@@ -37,7 +37,7 @@
         "lazypipe": "1.0.2",
         "map-stream": "file:./ns_npm_repository/map-stream",
         "mime": "2.4.4",
-        "nconf": "0.10.0",
+        "nconf": "0.11.4",
         "ns-uploader": "file:./ns_npm_repository/ns-uploader",
         "open": "6.3.0",
         "plugin-error": "1.0.1",
