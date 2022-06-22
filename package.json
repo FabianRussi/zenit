@@ -14,7 +14,7 @@
         "almond": "0.3.3",
         "ansi-colors": "4.1.1",
         "archiver": "3.1.1",
-        "async": "3.0.1",
+        "async": "3.2.2",
         "cli-spinner": "0.2.10",
         "cors": "2.8.5",
         "del": "4.1.1",
